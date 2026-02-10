@@ -21,6 +21,18 @@ Complete star schema data warehouse implementation for healthcare analytics.
 - **Use Cases:** Executive dashboards, operational reporting, clinical analytics
 - 📂 [View Project](sql-patterns/healthcare-datawarehouse/) *(coming soon)*
 
+## Medallion Pipelines (Lakehouse)
+
+### Healthcare Medallion Demo (Databricks + Fabric)
+End-to-end Bronze → Silver → Gold pipeline using two healthcare source systems (HSA + UCN).
+
+- Databricks (Python scripts): `pipelines/medallion/databricks/notebooks/`
+- Fabric (Python scripts): `pipelines/medallion/fabric/notebooks/`
+
+Notes:
+- Fabric Bronze step is documented as a manual Lakehouse file load (see Fabric README).
+- Each platform includes a README with run order and purpose.
+
 ### Coming Soon
 - DAX patterns from 15 years of production analytics
 - Data integration patterns (ETL, incremental loads)
